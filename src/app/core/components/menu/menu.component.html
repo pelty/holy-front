@@ -1,0 +1,47 @@
+<div class="row menu">
+    <div class="col xs1">
+        <a routerLink="/galerie">
+            <img src="assets/logo.png" alt="logo" width="150">
+        </a>
+    </div>
+    <div class="col xs10"></div>
+    <div class="col xs10"></div>
+    <div class="col xs10"></div>
+
+    <div class="col xs1">
+        <button class="menuButton" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" dip>
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item routerLink="/galerie">
+                <mat-icon>voicemail</mat-icon>
+                <span>Galerie</span>
+            </button>
+            <button mat-menu-item routerLink="/prestation">
+                <mat-icon>voicemail</mat-icon>
+                <span>Prestation</span>
+            </button>
+            <button mat-menu-item routerLink="/apropos">
+                <mat-icon>voicemail</mat-icon>
+                <span>A propos</span>
+            </button>
+            <button mat-menu-item routerLink="/contact">
+                <mat-icon>voicemail</mat-icon>
+                <span>contact</span>
+            </button>
+            <button mat-menu-item routerLink="/contact">
+                <mat-icon>voicemail</mat-icon>
+                <span>login</span>
+            </button>
+        </mat-menu>
+    </div>
+  
+</div>

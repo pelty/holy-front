@@ -1,0 +1,39 @@
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+    <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="assets/shootingPhoto/g_40_4sit93BPrn.jpg" height="500px">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="assets/shootingPhoto/g_40_6JQoZ4FowR.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="assets/shootingPhoto/g_40_8CyZCbimmB.jpg" style="width:100%">
+    </div>
+
+
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="assets/shootingPhoto/g_40_4sit93BPrn.jpg" style="width:100%" (click)="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="assets/shootingPhoto/g_40_6JQoZ4FowR.jpg" style="width:100%" (click)="currentSlide(1)"
+                alt="The Woods">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="assets/shootingPhoto/g_40_8CyZCbimmB.jpg" style="width:100%" (click)="currentSlide(1)"
+                alt="The Woods">
+        </div>
+        
+    </div>
+</div>

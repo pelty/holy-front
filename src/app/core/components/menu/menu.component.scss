@@ -1,0 +1,25 @@
+//Menu
+.color-mat-toolbar{
+    color: #685407;
+    background-color: black;
+
+    .button-menu-size {
+        background-color: black;
+        color: #7F4A1B;
+        font-size: large;
+        margin-right: 2%;
+    }
+        .button-menu-size:hover{
+        background-color: #5746035d;
+    }
+}
+
+.mat-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 100%;
+}
